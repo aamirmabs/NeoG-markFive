@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
+
+.menu-item {
+  @apply block px-4 flex justify-end border-b-4 border-gray-300 transition duration-700 ease-in-out;
+}
+
+.menu-item:hover {
+  @apply border-red-500 font-bold;
+}
+
+#menu-active-page {
+  @apply border-blue-400;
+}
+
+#menu-active-page:hover {
+  @apply border-red-500;
+}
+
 @tailwind utilities;

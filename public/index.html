@@ -2,147 +2,153 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Blog Template</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <!-- START NAV  -->
-    <div class="">
-      <div class="bg-blue-200 border-b border-blue-600">
-        <nav class="">
-          <!-- LOGO -->
-          <div class="">
-            <h1 class="font-bold uppercase p4">
-              <a href="/" class="">Aamir Abbas</a>
-            </h1>
-          </div>
-          <!-- END LOGO -->
-
-          <!-- MENU -->
-          <ul class="">
-            <li class="text-blue-800 font-semibold">
-              <a href="#" class=""> <span class="">Home</span></a>
-            </li>
-            <li class="">
-              <a href="#" class=""><span class="">Blog</span></a>
-            </li>
-            <li class="">
-              <a href="#" class=""><span class="">Portfolio</span></a>
-            </li>
-            <li class="">
-              <a href="#" class=""><span class="">Contact</span></a>
-            </li>
-          </ul>
-          <!-- END MENU -->
-        </nav>
+    <div class="grid md:grid-cols-3 h-screen">
+      <div
+        class="bg-blue-300 md:col-span-1 md:flex md:justify-end md:justify-center md:align-middle"
+      >
+        <div class="md:col-span-1 md:flex md:justify-end">
+          <nav class="text-right flex-center">
+            <div>
+              <img src="./img/developer.png" alt="Developer" class="m-2" />
+              <h1 class="font-bold p-2 border-b border-blue-100">
+                <a href="/" class="hover:text-blue-700">Aamir Abbas</a>
+              </h1>
+            </div>
+            <ul class="text-sm mt-6">
+              <li class="text-blue-700 font-bold py-1 hover:text-red-500">
+                <a
+                  href="#"
+                  class="menu-item hover:border-red-500 hover:font-bold"
+                  id="menu-active-page"
+                >
+                  <span>Home</span>
+                  <svg
+                    class="w-5 ml-2"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="py-1 hover:text-blue-700">
+                <a
+                  href="#"
+                  class="menu-item hover:border-red-500 hover:font-bold"
+                >
+                  <span>Portfolio</span>
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="py-1 hover:text-blue-700">
+                <a
+                  href="#"
+                  class="menu-item hover:border-red-500 hover:font-bold"
+                >
+                  <span>Blog</span>
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
-    <!-- END NAV  -->
 
-    <main class="px-16 py-16">
-      <div class="">
-        <a href="" class="">Log In</a>
-        <a href="" class="">Sign Up</a>
-      </div>
-
-      <header class="">
-        <h2 class="text-blue-800 text-6xl font-semibold">Page Title</h2>
-        <h3 class="text-blue-700 text-3xl font-semibold">Sub Title</h3>
-      </header>
-
-      <div class="">
-        <h4 class="text-blue-600 font-bold mt-12 pb-2 border-b border-blue-300">
-          Latest Articles
-        </h4>
-
-        <div class="mt-8">
-          <!-- ARTICLE CARDS HERE  -->
-          <div class="">
+      <!-- BODY -->
+      <div class="bg-blue-100 md:col-span-2">
+        <div class="bg-gray-100 py-2 text-center">
+          <h1 class="text-5xl">Blog Title Here</h1>
+          <p class="italic text-xs">by Aamir Abbas</p>
+          <div class="p-4 flex flex-wrap justify-center">
             <img
-              src="https://via.placeholder.com/640x360?text=Article+No+1"
-              alt="article 1"
-              class=""
+              class="shadow-lg"
+              src="./img/placeholder.png"
+              alt=""
+              srcset=""
             />
-            <span class="">Article title</span
-            ><span class="">By Aamir Abbas</span>
+          </div>
+        </div>
+
+        <!-- ARTICLE CONTENT -->
+        <div class="text-justify px-10 py-5">
+          <p class="text-lg">
+            One morning, when Gregor Samsa woke from troubled dreams, he found
+            himself transformed in his bed into a horrible vermin. He lay on his
+            armour-like back, and if he lifted his head a little he could see
+            his brown belly, slightly domed and divided by arches into stiff
+            sections.
+          </p>
+          <h2 class="text-4xl">Some other heading here</h2>
+          <p class="text-lg">
+            One morning, when Gregor Samsa woke from troubled dreams, he found
+            himself transformed in his bed into a horrible vermin. He lay on his
+            armour-like back, and if he lifted his head a little he could see
+            his brown belly, slightly domed and divided by arches into stiff
+            sections.
+          </p>
+          <h3 class="text-3xl">Some other heading here</h3>
+          <p class="text-lg">
+            One morning, when Gregor Samsa woke from troubled dreams, he found
+            himself transformed in his bed into a horrible vermin. He lay on his
+            armour-like back, and if he lifted his head a little he could see
+            his brown belly, slightly domed and divided by arches into stiff
+            sections.
+          </p>
+        </div>
+
+        <!-- ARTICLE NAVIGATION -->
+        <div class="grid grid-cols-2 bg-blue-500 text-yellow-500 flex">
+          <div
+            class="px-4 py-1 col-span-1 hover:bg-blue-600 hover:text-yellow-200 transition duration-700 ease-in-out hover:font-bold flex-start"
+          >
+            <div class="font-bold">&lt;&lt;&lt; Prev</div>
+            <div class="">Article Title</div>
+          </div>
+          <div
+            class="px-4 py-1 col-span-1 hover:bg-blue-600 hover:text-yellow-200 transition duration-700 ease-in-out hover:font-bold flex-end text-right"
+          >
+            <div class="font-bold">Next &gt;&gt;&gt;</div>
+            <div class="">Article Title</div>
           </div>
         </div>
       </div>
-    </main>
-
-    <!-- TYPOGRAPHY  -->
-    <hr />
-    <h1>Typography</h1>
-
-    <h1 class="">H1</h1>
-    <h2 class="">H2</h2>
-    <h3 class="">H3</h3>
-    <h4 class="">H4</h4>
-    <h5 class="">H5</h5>
-    <h6 class="">H6</h6>
-
-    <p class="">Paragraph text.</p>
-    <p class="">Small text.</p>
-
-    <!-- CONTAINERS  -->
-    <hr />
-    <h1>Containers</h1>
-
-    <!-- fluid container -->
-    <!-- center container -->
-
-    <!-- links -->
-    <hr />
-    <h1>Links</h1>
-
-    <a href="" class="">Primary Link</a>
-    <a href="" class="">Secondary Link</a>
-
-    <!-- lists -->
-    <hr />
-    <h1>Lists</h1>
-
-    <!-- unordered lists (without bullets) -->
-    <ul class="">
-      <li class="">L 1</li>
-      <li class="">L 2</li>
-      <li class="">L 3</li>
-    </ul>
-
-    <!-- inline lists -->
-    <ol class="">
-      <li class="">L 1</li>
-      <li class="">L 2</li>
-      <li class="">L 3</li>
-    </ol>
-
-    <!-- reverse ordered lists -->
-    <ol class="">
-      <li class="">L 1</li>
-      <li class="">L 2</li>
-      <li class="">L 3</li>
-    </ol>
-
-    <!-- header -->
-    <hr />
-    <h1>Header</h1>
-    <!-- header image -->
-    <!-- header heading -->
-
-    <!-- section -->
-    <hr />
-    <h1>Section</h1>
-
-    <!-- normal section -->
-    <!-- heading center -->
-    <!-- padding top and bottom -->
-
-    <!-- off white section -->
-    <!-- background change -->
-
-    <!-- footer -->
-    <footer class="">Footer here.</footer>
-    <hr />
-    <h1>Footer</h1>
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>
