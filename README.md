@@ -76,3 +76,7 @@ We will then run the command `tailwindcss build src/styles.css -o public/styles.
         },
       }
   ```
+
+## Credits
+
+- Slideshow code on portfolio page taken from [Tailwind Toolbox](https://www.tailwindtoolbox.com/components/carousel) - a project developed and maintained by [Amrit Nagi](https://twitter.com/amritnagi).

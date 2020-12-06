@@ -14,7 +14,9 @@
           <nav class="text-right flex-center">
             <div class="flex flex-row justify-between items-center">
               <h1 class="font-bold p-2 border-b border-blue-100">
-                <a href="/" class="hover:text-blue-700">Aamir Abbas</a>
+                <a href="../index.html" class="hover:text-blue-700"
+                  >Aamir Abbas</a
+                >
               </h1>
               <div id="burger" class="px-2 cursor-pointer md:hidden">
                 <svg
@@ -34,12 +36,8 @@
               </div>
             </div>
             <ul id="menu" class="text-sm mt-6 hidden md:block">
-              <li class="text-blue-700 font-bold py-1 hover:text-red-500">
-                <a
-                  href="#"
-                  class="menu-item hover:border-red-500 hover:font-bold"
-                  id="menu-active-page"
-                >
+              <li class="py-1">
+                <a href="../index.html" class="menu-item">
                   <span>Home</span>
                   <svg
                     class="w-5 ml-2"
@@ -58,8 +56,9 @@
               </li>
               <li class="py-1 hover:text-blue-700">
                 <a
-                  href="#"
-                  class="menu-item hover:border-red-500 hover:font-bold"
+                  href="../portfolio.html"
+                  class="menu-item"
+                  id="menu-active-page"
                 >
                   <span>Portfolio</span>
                   <svg
@@ -79,10 +78,7 @@
                 </a>
               </li>
               <li class="py-1 hover:text-blue-700">
-                <a
-                  href="#"
-                  class="menu-item hover:border-red-500 hover:font-bold"
-                >
+                <a href="../blog.html" class="menu-item">
                   <span>Blog</span>
                   <svg
                     class="w-6 h-6"
@@ -108,43 +104,278 @@
       <!-- BODY -->
       <div class="bg-blue-100 md:col-span-2">
         <div class="bg-gray-100 py-2 text-center">
-          <h1 class="text-5xl">Blog Title Here</h1>
-          <p class="italic text-xs">by Aamir Abbas</p>
-          <div class="p-4 flex flex-wrap justify-center">
-            <img
-              class="shadow-lg"
-              src="./img/placeholder.png"
-              alt=""
-              srcset=""
-            />
+          <h1 class="text-5xl">Portfolio</h1>
+          <p class="text-3xl border-b-4 border-blue-200">Latest Project</p>
+
+          <div class="bg-white font-sans leading-normal tracking-normal">
+            <div class="carousel relative shadow-2xl bg-white">
+              <div class="carousel-inner relative overflow-hidden w-full">
+                <!--Slide 1-->
+                <input
+                  class="carousel-open"
+                  type="radio"
+                  id="carousel-1"
+                  name="carousel"
+                  aria-hidden="true"
+                  hidden=""
+                  checked="checked"
+                />
+                <div
+                  class="carousel-item absolute opacity-0"
+                  style="height: 65vh"
+                >
+                  <div
+                    class="block h-full w-full bg-indigo-500 text-white text-5xl text-center rounded overflow-hidden slide"
+                    id="slide-1"
+                  >
+                    <div class="flex flex-col">
+                      <span class="text-2xl"> Title of project </span
+                      ><span class="text-lg">05 Dec 2020</span>
+                    </div>
+                  </div>
+                </div>
+                <label
+                  for="carousel-3"
+                  class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
+                  >‹</label
+                >
+                <label
+                  for="carousel-2"
+                  class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
+                  >›</label
+                >
+
+                <!--Slide 2-->
+                <input
+                  class="carousel-open"
+                  type="radio"
+                  id="carousel-2"
+                  name="carousel"
+                  aria-hidden="true"
+                  hidden=""
+                />
+                <div
+                  class="carousel-item absolute opacity-0"
+                  style="height: 65vh"
+                >
+                  <div
+                    class="block h-full w-full bg-orange-500 text-white text-5xl text-center slide"
+                    id="slide-2"
+                  >
+                    <div class="flex flex-col">
+                      <span class="text-2xl">2 Title of project </span
+                      ><span class="text-lg">05 Dec 2020</span>
+                    </div>
+                  </div>
+                </div>
+                <label
+                  for="carousel-1"
+                  class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
+                  >‹</label
+                >
+                <label
+                  for="carousel-3"
+                  class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
+                  >›</label
+                >
+
+                <!--Slide 3-->
+                <input
+                  class="carousel-open"
+                  type="radio"
+                  id="carousel-3"
+                  name="carousel"
+                  aria-hidden="true"
+                  hidden=""
+                />
+                <div
+                  class="carousel-item absolute opacity-0"
+                  style="height: 65vh"
+                >
+                  <div
+                    class="block h-full w-full bg-green-500 text-white text-5xl text-center slide"
+                    id="slide-3"
+                  >
+                    <div class="flex flex-col">
+                      <span class="text-2xl">3 Title of project </span
+                      ><span class="text-lg">05 Dec 2020</span>
+                    </div>
+                  </div>
+                </div>
+                <label
+                  for="carousel-2"
+                  class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
+                  >‹</label
+                >
+                <label
+                  for="carousel-1"
+                  class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
+                  >›</label
+                >
+
+                <!-- Add additional indicators for each slide-->
+                <ol class="carousel-indicators">
+                  <li class="inline-block mr-3">
+                    <label
+                      for="carousel-1"
+                      class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
+                      >•</label
+                    >
+                  </li>
+                  <li class="inline-block mr-3">
+                    <label
+                      for="carousel-2"
+                      class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
+                      >•</label
+                    >
+                  </li>
+                  <li class="inline-block mr-3">
+                    <label
+                      for="carousel-3"
+                      class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
+                      >•</label
+                    >
+                  </li>
+                </ol>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- ARTICLE CONTENT -->
         <div class="text-justify px-10 py-5">
-          <p class="text-lg">
-            One morning, when Gregor Samsa woke from troubled dreams, he found
-            himself transformed in his bed into a horrible vermin. He lay on his
-            armour-like back, and if he lifted his head a little he could see
-            his brown belly, slightly domed and divided by arches into stiff
-            sections.
+          <p class="text-3xl border-b-4 border-blue-200 text-center">
+            Previous Projects
           </p>
-          <h2 class="text-4xl">Some other heading here</h2>
-          <p class="text-lg">
-            One morning, when Gregor Samsa woke from troubled dreams, he found
-            himself transformed in his bed into a horrible vermin. He lay on his
-            armour-like back, and if he lifted his head a little he could see
-            his brown belly, slightly domed and divided by arches into stiff
-            sections.
-          </p>
-          <h3 class="text-3xl">Some other heading here</h3>
-          <p class="text-lg">
-            One morning, when Gregor Samsa woke from troubled dreams, he found
-            himself transformed in his bed into a horrible vermin. He lay on his
-            armour-like back, and if he lifted his head a little he could see
-            his brown belly, slightly domed and divided by arches into stiff
-            sections.
-          </p>
+
+          <!-- CARD -->
+          <div
+            class="relative bg-white rounded overflow-hidden shadow-md hover:shadow-lg"
+          >
+            <img
+              src="./img/placeholder.png"
+              alt=""
+              srcset=""
+              class="w-full h-32 sm:h-48 object-cover"
+            />
+            <div class="m-4">
+              <span class="text-2xl font-semibold">3 Title of project </span
+              ><span class="text-lg block text-blue-400">05 Dec 2020</span>
+              <div class="flex flex-row">
+                <a href="#" class=""
+                  ><button class="project-button hover:bg-green-400">
+                    <img
+                      src="./img/icons/eye.svg"
+                      alt=""
+                      srcset=""
+                      class="w-5 h-5 mr-2"
+                    />
+                    <span>View Project</span>
+                  </button></a
+                >
+                <a href="#" class=""
+                  ><button class="project-button hover:bg-purple-400">
+                    <img
+                      src="./img/icons/github.svg"
+                      alt=""
+                      srcset=""
+                      class="w-5 h-5 mr-2"
+                    />
+                    <span>Github</span>
+                  </button></a
+                >
+                <a href="#" class=""
+                  ><button class="project-button hover:bg-gray-500">
+                    <img
+                      src="./img/icons/replit.svg"
+                      alt=""
+                      srcset=""
+                      class="w-6 h-6 mr-2"
+                    />
+                    <span>Repl.it</span>
+                  </button></a
+                >
+                <a href="#" class=""
+                  ><button class="project-button hover:bg-red-400 transition">
+                    <img
+                      src="./img/icons/youtube.svg"
+                      alt=""
+                      srcset=""
+                      class="w-6 h-6 mr-2"
+                    />
+                    <span>Demo</span>
+                  </button></a
+                >
+              </div>
+            </div>
+
+            <div class="absolute top-0 m-1 flex flex-row">
+              <!-- CSS -->
+              <div class="text-blue-400 bg-blue-200 card">
+                <img
+                  src="./img/tech/sm-css3.png"
+                  alt="CSS"
+                  class="h-5 w-5"
+                /><span class="text-xs">CSS</span>
+              </div>
+              <!-- GITHUB -->
+              <div class="text-gray-600 bg-gray-200 card">
+                <img
+                  src="./img/tech/sm-github.png"
+                  alt="Github"
+                  class="h-5 w-5"
+                /><span class="text-xs">Github</span>
+              </div>
+              <!-- HTML -->
+              <div class="text-red-400 bg-red-100 card">
+                <img
+                  src="./img/tech/sm-html5.png"
+                  alt="HTML"
+                  class="h-5 w-5"
+                /><span class="text-xs">HTML</span>
+              </div>
+              <!-- JS -->
+              <div class="text-yellow-600 bg-yellow-100 card">
+                <img
+                  src="./img/tech/sm-js.png"
+                  alt="Javascript"
+                  class="h-5 w-5"
+                /><span class="text-xs">Javascript</span>
+              </div>
+              <!-- NodeJS -->
+              <div class="text-green-400 bg-green-100 card">
+                <img
+                  src="./img/tech/sm-node.png"
+                  alt="NodeJS"
+                  class="h-5 w-5"
+                /><span class="text-xs">NodeJS</span>
+              </div>
+              <!-- React -->
+              <div class="text-blue-400 bg-blue-100 card">
+                <img
+                  src="./img/tech/sm-react.png"
+                  alt="React"
+                  class="h-5 w-5"
+                /><span class="text-xs">React</span>
+              </div>
+              <!-- Tailwind -->
+              <div class="text-gray-600 bg-gray-100 card">
+                <img
+                  src="./img/tech/sm-tailwindcss.png"
+                  alt="Tailwind CSS"
+                  class="h-5 w-5"
+                /><span class="text-xs">Tailwind CSS</span>
+              </div>
+              <!-- VSCode -->
+              <div class="text-purple-600 bg-purple-100 card">
+                <img
+                  src="./img/tech/sm-vscode.png"
+                  alt="VSCode"
+                  class="h-5 w-5"
+                /><span class="text-xs">VSCode</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- ARTICLE NAVIGATION -->
@@ -162,6 +393,17 @@
             <div class="">Article Title</div>
           </div>
         </div>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="fixed p-2 bottom-0 w-screen bg-gray-500 flex justify-center">
+        Built with 💖. Built With
+        <img
+          src="./img/tech/sm-tailwindcss.png"
+          alt="Tailwind CSS"
+          class="h-6 w-6"
+        />
+        Tailwind CSS.
       </div>
     </div>
     <script src="index.js"></script>
