@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog Template</title>
+    <title>Home</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -37,7 +37,7 @@
             </div>
             <ul id="menu" class="text-sm mt-6 hidden md:block">
               <li class="py-1">
-                <a href="../index.html" class="menu-item">
+                <a href="../index.html" class="menu-item" id="menu-active-page">
                   <span>Home</span>
                   <svg
                     class="w-5 ml-2"
@@ -55,11 +55,7 @@
                 </a>
               </li>
               <li class="py-1 hover:text-blue-700">
-                <a
-                  href="../portfolio.html"
-                  class="menu-item"
-                  id="menu-active-page"
-                >
+                <a href="../portfolio.html" class="menu-item">
                   <span>Portfolio</span>
                   <svg
                     class="w-6 h-6"
@@ -102,296 +98,931 @@
       </div>
 
       <!-- BODY -->
-      <div class="bg-blue-100 md:col-span-2">
-        <div class="bg-gray-100 py-2 text-center">
-          <h1 class="text-5xl">Portfolio</h1>
-          <p class="text-3xl border-b-4 border-blue-200">Latest Project</p>
-
-          <div class="bg-white font-sans leading-normal tracking-normal">
-            <div class="carousel relative shadow-2xl bg-white">
-              <div class="carousel-inner relative overflow-hidden w-full">
-                <!--Slide 1-->
-                <input
-                  class="carousel-open"
-                  type="radio"
-                  id="carousel-1"
-                  name="carousel"
-                  aria-hidden="true"
-                  hidden=""
-                  checked="checked"
-                />
-                <div
-                  class="carousel-item absolute opacity-0"
-                  style="height: 65vh"
-                >
-                  <div
-                    class="block h-full w-full bg-indigo-500 text-white text-5xl text-center rounded overflow-hidden slide"
-                    id="slide-1"
-                  >
-                    <div class="flex flex-col">
-                      <span class="text-2xl"> Title of project </span
-                      ><span class="text-lg">05 Dec 2020</span>
-                    </div>
-                  </div>
-                </div>
-                <label
-                  for="carousel-3"
-                  class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
-                  >‹</label
-                >
-                <label
-                  for="carousel-2"
-                  class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
-                  >›</label
-                >
-
-                <!--Slide 2-->
-                <input
-                  class="carousel-open"
-                  type="radio"
-                  id="carousel-2"
-                  name="carousel"
-                  aria-hidden="true"
-                  hidden=""
-                />
-                <div
-                  class="carousel-item absolute opacity-0"
-                  style="height: 65vh"
-                >
-                  <div
-                    class="block h-full w-full bg-orange-500 text-white text-5xl text-center slide"
-                    id="slide-2"
-                  >
-                    <div class="flex flex-col">
-                      <span class="text-2xl">2 Title of project </span
-                      ><span class="text-lg">05 Dec 2020</span>
-                    </div>
-                  </div>
-                </div>
-                <label
-                  for="carousel-1"
-                  class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
-                  >‹</label
-                >
-                <label
-                  for="carousel-3"
-                  class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
-                  >›</label
-                >
-
-                <!--Slide 3-->
-                <input
-                  class="carousel-open"
-                  type="radio"
-                  id="carousel-3"
-                  name="carousel"
-                  aria-hidden="true"
-                  hidden=""
-                />
-                <div
-                  class="carousel-item absolute opacity-0"
-                  style="height: 65vh"
-                >
-                  <div
-                    class="block h-full w-full bg-green-500 text-white text-5xl text-center slide"
-                    id="slide-3"
-                  >
-                    <div class="flex flex-col">
-                      <span class="text-2xl">3 Title of project </span
-                      ><span class="text-lg">05 Dec 2020</span>
-                    </div>
-                  </div>
-                </div>
-                <label
-                  for="carousel-2"
-                  class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
-                  >‹</label
-                >
-                <label
-                  for="carousel-1"
-                  class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
-                  >›</label
-                >
-
-                <!-- Add additional indicators for each slide-->
-                <ol class="carousel-indicators">
-                  <li class="inline-block mr-3">
-                    <label
-                      for="carousel-1"
-                      class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
-                      >•</label
-                    >
-                  </li>
-                  <li class="inline-block mr-3">
-                    <label
-                      for="carousel-2"
-                      class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
-                      >•</label
-                    >
-                  </li>
-                  <li class="inline-block mr-3">
-                    <label
-                      for="carousel-3"
-                      class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
-                      >•</label
-                    >
-                  </li>
-                </ol>
-              </div>
+      <div class="bg-blue-100 md:col-span-2 mb-10">
+        <div class="bg-gray-100 py-2 text-center border-b-4 border-blue-600">
+          <div class="flex flex-row sm:flex-col">
+            <div class="">
+              <h1 class="">
+                Hello, I am <br />
+                Aamir Abbas
+              </h1>
             </div>
-          </div>
-        </div>
-
-        <!-- ARTICLE CONTENT -->
-        <div class="text-justify px-10 py-5">
-          <p class="text-3xl border-b-4 border-blue-200 text-center">
-            Previous Projects
-          </p>
-
-          <!-- CARD -->
-          <div
-            class="relative bg-white rounded overflow-hidden shadow-md hover:shadow-lg"
-          >
-            <img
-              src="./img/placeholder.png"
-              alt=""
-              srcset=""
-              class="w-full h-32 sm:h-48 object-cover"
-            />
-            <div class="m-4">
-              <span class="text-2xl font-semibold">3 Title of project </span
-              ><span class="text-lg block text-blue-400">05 Dec 2020</span>
-              <div class="flex flex-row">
-                <a href="#" class=""
-                  ><button class="project-button hover:bg-green-400">
-                    <img
-                      src="./img/icons/eye.svg"
-                      alt=""
-                      srcset=""
-                      class="w-5 h-5 mr-2"
-                    />
-                    <span>View Project</span>
-                  </button></a
-                >
-                <a href="#" class=""
-                  ><button class="project-button hover:bg-purple-400">
-                    <img
-                      src="./img/icons/github.svg"
-                      alt=""
-                      srcset=""
-                      class="w-5 h-5 mr-2"
-                    />
-                    <span>Github</span>
-                  </button></a
-                >
-                <a href="#" class=""
-                  ><button class="project-button hover:bg-gray-500">
-                    <img
-                      src="./img/icons/replit.svg"
-                      alt=""
-                      srcset=""
-                      class="w-6 h-6 mr-2"
-                    />
-                    <span>Repl.it</span>
-                  </button></a
-                >
-                <a href="#" class=""
-                  ><button class="project-button hover:bg-red-400 transition">
-                    <img
-                      src="./img/icons/youtube.svg"
-                      alt=""
-                      srcset=""
-                      class="w-6 h-6 mr-2"
-                    />
-                    <span>Demo</span>
-                  </button></a
-                >
-              </div>
+            <div class="self-center">
+              <img
+                src="https://avatars1.githubusercontent.com/u/28214972?s=460&u=3cdabb635aaba8ab320d0a9f5a0513aa3e3a2d35&v=4"
+                alt=""
+                srcset=""
+                class="w-56 h-56"
+              />
             </div>
-
-            <div class="absolute top-0 m-1 flex flex-row">
-              <!-- CSS -->
-              <div class="text-blue-400 bg-blue-200 card">
+            <div class="mx-20 my-5 text-justify">
+              <p class="">
+                I am a sales professional attempting to make a jump into the
+                software development industry. This website is project build as
+                a part of the <span class="text-blue-400">#neogcamp</span>,
+                which is a bootcamp organized by
+                <span class="text-blue-400"
+                  ><a
+                    href="https://twitter.com/tanaypratap"
+                    class="text-blue-400"
+                    >Tanay Pratap</a
+                  ></span
+                >
+                to help 100 motivated learners get a web dev job in less than 6
+                months of them starting to learn development.
+              </p>
+              <p>I am currently learning the following technologies:</p>
+            </div>
+            <div class="mx-20 md:block sm:hidden">
+              <div class="flex flex-row flex-wrap">
+                <img src="./img/tech/md-github.png" alt="Github" srcset="" />
+                <img src="./img/tech/md-html5.png" alt="HTML" srcset="" />
+                <img src="./img/tech/md-css3.png" alt="CSS" srcset="" />
+                <img src="./img/tech/md-js.png" alt="Javascript" srcset="" />
+                <img src="./img/tech/md-node.png" alt="NodeJS" srcset="" />
+                <img src="./img/tech/md-react.png" alt="React" srcset="" />
                 <img
-                  src="./img/tech/sm-css3.png"
-                  alt="CSS"
-                  class="h-5 w-5"
-                /><span class="text-xs">CSS</span>
-              </div>
-              <!-- GITHUB -->
-              <div class="text-gray-600 bg-gray-200 card">
-                <img
-                  src="./img/tech/sm-github.png"
-                  alt="Github"
-                  class="h-5 w-5"
-                /><span class="text-xs">Github</span>
-              </div>
-              <!-- HTML -->
-              <div class="text-red-400 bg-red-100 card">
-                <img
-                  src="./img/tech/sm-html5.png"
-                  alt="HTML"
-                  class="h-5 w-5"
-                /><span class="text-xs">HTML</span>
-              </div>
-              <!-- JS -->
-              <div class="text-yellow-600 bg-yellow-100 card">
-                <img
-                  src="./img/tech/sm-js.png"
-                  alt="Javascript"
-                  class="h-5 w-5"
-                /><span class="text-xs">Javascript</span>
-              </div>
-              <!-- NodeJS -->
-              <div class="text-green-400 bg-green-100 card">
-                <img
-                  src="./img/tech/sm-node.png"
-                  alt="NodeJS"
-                  class="h-5 w-5"
-                /><span class="text-xs">NodeJS</span>
-              </div>
-              <!-- React -->
-              <div class="text-blue-400 bg-blue-100 card">
-                <img
-                  src="./img/tech/sm-react.png"
-                  alt="React"
-                  class="h-5 w-5"
-                /><span class="text-xs">React</span>
-              </div>
-              <!-- Tailwind -->
-              <div class="text-gray-600 bg-gray-100 card">
-                <img
-                  src="./img/tech/sm-tailwindcss.png"
+                  src="./img/tech/md-tailwindcss.png"
                   alt="Tailwind CSS"
-                  class="h-5 w-5"
-                /><span class="text-xs">Tailwind CSS</span>
-              </div>
-              <!-- VSCode -->
-              <div class="text-purple-600 bg-purple-100 card">
+                  srcset=""
+                />
                 <img
-                  src="./img/tech/sm-vscode.png"
-                  alt="VSCode"
-                  class="h-5 w-5"
-                /><span class="text-xs">VSCode</span>
+                  src="./img/tech/md-vscode.png"
+                  alt="Visual Studio Code"
+                  srcset=""
+                />
               </div>
+            </div>
+            <div class="mx-20 my-5 text-justify">
+              <p class="py-2 font-bold">
+                This website is built with
+                <a href="" class="">Tailwind CSS</a> as a project for the final
+                <span class="text-blue-400">#levelZero</span> submission
+                required to get selected for the
+                <span class="text-blue-400">#levelOne</span> taught program.
+              </p>
+            </div>
+            <div class="">
+              <a href="#" class=""
+                ><button class="project-button hover:bg-purple-400">
+                  <img
+                    src="./img/icons/github.svg"
+                    alt=""
+                    srcset=""
+                    class="w-5 h-5 mr-2"
+                  />
+                  <span>View Github Repo</span>
+                </button></a
+              >
+              <a href="#" class=""
+                ><button class="project-button hover:bg-gray-600">
+                  <img
+                    src="./img/tech/sm-tailwindcss.png"
+                    alt=""
+                    srcset=""
+                    class="w-6 h-6 mr-2"
+                  />
+                  <span>Explore Tailwind CSS</span>
+                </button></a
+              >
             </div>
           </div>
         </div>
 
-        <!-- ARTICLE NAVIGATION -->
-        <div class="grid grid-cols-2 bg-blue-500 text-yellow-500 flex">
-          <div
-            class="px-4 py-1 col-span-1 hover:bg-blue-600 hover:text-yellow-200 transition duration-700 ease-in-out hover:font-bold flex-start"
-          >
-            <div class="font-bold">&lt;&lt;&lt; Prev</div>
-            <div class="">Article Title</div>
+        <!-- PROJECT CARDS -->
+        <div class="text-justify px-10 py-5">
+          <h2 class="text-3xl text-center">Latest Projects</h2>
+
+          <div class="grid lg:grid-cols-2 gap-5">
+            <!-- CARD 4. Minion Speak -->
+            <div
+              class="relative bg-white rounded overflow-hidden shadow-md hover:shadow-lg"
+            >
+              <img
+                src="./img/placeholder.png"
+                alt=""
+                srcset=""
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="text-2xl font-semibold">Minion Speak</span
+                ><span class="text-lg block text-blue-400">05 Dec 2020</span>
+                <span class="block text-blue-700"
+                  >One morning, when George woke from troubled dreams, he found
+                  himself transformed in his bed into a horrible vermin. He lay
+                  on his armour-like back, and if he lifted his head a little he
+                  could see his brown belly, slightly domed and divided by
+                  arches into stiff sections.</span
+                >
+                <div class="flex flex-row flex-wrap justify-evenly">
+                  <a href="#" class=""
+                    ><button class="project-button hover:bg-green-400">
+                      <img
+                        src="./img/icons/eye.svg"
+                        alt=""
+                        srcset=""
+                        class="w-5 h-5 mr-2"
+                      />
+                      <span>View Project</span>
+                    </button></a
+                  >
+                  <a href="#" class=""
+                    ><button class="project-button hover:bg-purple-400">
+                      <img
+                        src="./img/icons/github.svg"
+                        alt=""
+                        srcset=""
+                        class="w-5 h-5 mr-2"
+                      />
+                      <span>Github</span>
+                    </button></a
+                  >
+                  <a href="#" class=""
+                    ><button class="project-button hover:bg-gray-500">
+                      <img
+                        src="./img/icons/replit.svg"
+                        alt=""
+                        srcset=""
+                        class="w-6 h-6 mr-2"
+                      />
+                      <span>Repl.it</span>
+                    </button></a
+                  >
+                  <a href="#" class=""
+                    ><button class="project-button hover:bg-red-400 transition">
+                      <img
+                        src="./img/icons/youtube.svg"
+                        alt=""
+                        srcset=""
+                        class="w-6 h-6 mr-2"
+                      />
+                      <span>Demo</span>
+                    </button></a
+                  >
+                </div>
+              </div>
+
+              <div class="absolute top-0 m-1 flex flex-row">
+                <!-- CSS -->
+                <div class="text-blue-600 bg-blue-100 card">
+                  <img
+                    src="./img/tech/sm-css3.png"
+                    alt="CSS"
+                    class="h-5 w-5"
+                  /><span class="text-xs">CSS</span>
+                </div>
+                <!-- GITHUB -->
+                <div class="text-gray-600 bg-gray-200 card">
+                  <img
+                    src="./img/tech/sm-github.png"
+                    alt="Github"
+                    class="h-5 w-5"
+                  /><span class="text-xs">Github</span>
+                </div>
+                <!-- HTML -->
+                <div class="text-red-400 bg-red-100 card">
+                  <img
+                    src="./img/tech/sm-html5.png"
+                    alt="HTML"
+                    class="h-5 w-5"
+                  /><span class="text-xs">HTML</span>
+                </div>
+                <!-- JS -->
+                <div class="text-yellow-600 bg-yellow-100 card">
+                  <img
+                    src="./img/tech/sm-js.png"
+                    alt="Javascript"
+                    class="h-5 w-5"
+                  /><span class="text-xs">Javascript</span>
+                </div>
+                <!-- NodeJS -->
+                <div class="text-green-600 bg-green-100 card">
+                  <img
+                    src="./img/tech/sm-node.png"
+                    alt="NodeJS"
+                    class="h-5 w-5"
+                  /><span class="text-xs">NodeJS</span>
+                </div>
+                <!-- React -->
+                <div class="text-blue-400 bg-blue-100 card">
+                  <img
+                    src="./img/tech/sm-react.png"
+                    alt="React"
+                    class="h-5 w-5"
+                  /><span class="text-xs">React</span>
+                </div>
+                <!-- Tailwind -->
+                <div class="text-gray-600 bg-gray-100 card">
+                  <img
+                    src="./img/tech/sm-tailwindcss.png"
+                    alt="Tailwind CSS"
+                    class="h-5 w-5"
+                  /><span class="text-xs">Tailwind CSS</span>
+                </div>
+                <!-- VSCode -->
+                <div class="text-purple-600 bg-purple-100 card">
+                  <img
+                    src="./img/tech/sm-vscode.png"
+                    alt="VSCode"
+                    class="h-5 w-5"
+                  /><span class="text-xs">VSCode</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 5. Fun Translation App -->
+            <div
+              class="relative bg-white rounded overflow-hidden shadow-md hover:shadow-lg"
+            >
+              <img
+                src="./img/placeholder.png"
+                alt=""
+                srcset=""
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="text-2xl font-semibold">Fun Translation App</span
+                ><span class="text-lg block text-blue-400">05 Dec 2020</span>
+                <span class="block text-blue-700"
+                  >One morning, when George woke from troubled dreams, he found
+                  himself transformed in his bed into a horrible vermin. He lay
+                  on his armour-like back, and if he lifted his head a little he
+                  could see his brown belly, slightly domed and divided by
+                  arches into stiff sections.</span
+                >
+                <div class="flex flex-row flex-wrap justify-evenly">
+                  <a href="#" class=""
+                    ><button class="project-button hover:bg-green-400">
+                      <img
+                        src="./img/icons/eye.svg"
+                        alt=""
+                        srcset=""
+                        class="w-5 h-5 mr-2"
+                      />
+                      <span>View Project</span>
+                    </button></a
+                  >
+                  <a href="#" class=""
+                    ><button class="project-button hover:bg-purple-400">
+                      <img
+                        src="./img/icons/github.svg"
+                        alt=""
+                        srcset=""
+                        class="w-5 h-5 mr-2"
+                      />
+                      <span>Github</span>
+                    </button></a
+                  >
+                  <a href="#" class=""
+                    ><button class="project-button hover:bg-gray-500">
+                      <img
+                        src="./img/icons/replit.svg"
+                        alt=""
+                        srcset=""
+                        class="w-6 h-6 mr-2"
+                      />
+                      <span>Repl.it</span>
+                    </button></a
+                  >
+                  <a href="#" class=""
+                    ><button class="project-button hover:bg-red-400 transition">
+                      <img
+                        src="./img/icons/youtube.svg"
+                        alt=""
+                        srcset=""
+                        class="w-6 h-6 mr-2"
+                      />
+                      <span>Demo</span>
+                    </button></a
+                  >
+                </div>
+              </div>
+
+              <div class="absolute top-0 m-1 flex flex-row">
+                <!-- CSS -->
+                <div class="text-blue-600 bg-blue-100 card">
+                  <img
+                    src="./img/tech/sm-css3.png"
+                    alt="CSS"
+                    class="h-5 w-5"
+                  /><span class="text-xs">CSS</span>
+                </div>
+                <!-- GITHUB -->
+                <div class="text-gray-600 bg-gray-200 card">
+                  <img
+                    src="./img/tech/sm-github.png"
+                    alt="Github"
+                    class="h-5 w-5"
+                  /><span class="text-xs">Github</span>
+                </div>
+                <!-- HTML -->
+                <div class="text-red-400 bg-red-100 card">
+                  <img
+                    src="./img/tech/sm-html5.png"
+                    alt="HTML"
+                    class="h-5 w-5"
+                  /><span class="text-xs">HTML</span>
+                </div>
+                <!-- JS -->
+                <div class="text-yellow-600 bg-yellow-100 card">
+                  <img
+                    src="./img/tech/sm-js.png"
+                    alt="Javascript"
+                    class="h-5 w-5"
+                  /><span class="text-xs">Javascript</span>
+                </div>
+                <!-- NodeJS -->
+                <div class="text-green-600 bg-green-100 card">
+                  <img
+                    src="./img/tech/sm-node.png"
+                    alt="NodeJS"
+                    class="h-5 w-5"
+                  /><span class="text-xs">NodeJS</span>
+                </div>
+                <!-- React -->
+                <div class="text-blue-400 bg-blue-100 card">
+                  <img
+                    src="./img/tech/sm-react.png"
+                    alt="React"
+                    class="h-5 w-5"
+                  /><span class="text-xs">React</span>
+                </div>
+                <!-- Tailwind -->
+                <div class="text-gray-600 bg-gray-100 card">
+                  <img
+                    src="./img/tech/sm-tailwindcss.png"
+                    alt="Tailwind CSS"
+                    class="h-5 w-5"
+                  /><span class="text-xs">Tailwind CSS</span>
+                </div>
+                <!-- VSCode -->
+                <div class="text-purple-600 bg-purple-100 card">
+                  <img
+                    src="./img/tech/sm-vscode.png"
+                    alt="VSCode"
+                    class="h-5 w-5"
+                  /><span class="text-xs">VSCode</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 6. Know Your Emotions -->
+            <div
+              class="relative bg-white rounded overflow-hidden shadow-md hover:shadow-lg"
+            >
+              <img
+                src="./img/placeholder.png"
+                alt=""
+                srcset=""
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="text-2xl font-semibold">Know Your Emotions</span
+                ><span class="text-lg block text-blue-400">05 Dec 2020</span>
+                <span class="block text-blue-700"
+                  >One morning, when George woke from troubled dreams, he found
+                  himself transformed in his bed into a horrible vermin. He lay
+                  on his armour-like back, and if he lifted his head a little he
+                  could see his brown belly, slightly domed and divided by
+                  arches into stiff sections.</span
+                >
+                <div class="flex flex-row flex-wrap justify-evenly">
+                  <a href="#" class=""
+                    ><button class="project-button hover:bg-green-400">
+                      <img
+                        src="./img/icons/eye.svg"
+                        alt=""
+                        srcset=""
+                        class="w-5 h-5 mr-2"
+                      />
+                      <span>View Project</span>
+                    </button></a
+                  >
+                  <a href="#" class=""
+                    ><button class="project-button hover:bg-purple-400">
+                      <img
+                        src="./img/icons/github.svg"
+                        alt=""
+                        srcset=""
+                        class="w-5 h-5 mr-2"
+                      />
+                      <span>Github</span>
+                    </button></a
+                  >
+                  <a href="#" class=""
+                    ><button class="project-button hover:bg-gray-500">
+                      <img
+                        src="./img/icons/replit.svg"
+                        alt=""
+                        srcset=""
+                        class="w-6 h-6 mr-2"
+                      />
+                      <span>Repl.it</span>
+                    </button></a
+                  >
+                  <a href="#" class=""
+                    ><button class="project-button hover:bg-red-400 transition">
+                      <img
+                        src="./img/icons/youtube.svg"
+                        alt=""
+                        srcset=""
+                        class="w-6 h-6 mr-2"
+                      />
+                      <span>Demo</span>
+                    </button></a
+                  >
+                </div>
+              </div>
+
+              <div class="absolute top-0 m-1 flex flex-row">
+                <!-- CSS -->
+                <div class="text-blue-600 bg-blue-100 card">
+                  <img
+                    src="./img/tech/sm-css3.png"
+                    alt="CSS"
+                    class="h-5 w-5"
+                  /><span class="text-xs">CSS</span>
+                </div>
+                <!-- GITHUB -->
+                <div class="text-gray-600 bg-gray-200 card">
+                  <img
+                    src="./img/tech/sm-github.png"
+                    alt="Github"
+                    class="h-5 w-5"
+                  /><span class="text-xs">Github</span>
+                </div>
+                <!-- HTML -->
+                <div class="text-red-400 bg-red-100 card">
+                  <img
+                    src="./img/tech/sm-html5.png"
+                    alt="HTML"
+                    class="h-5 w-5"
+                  /><span class="text-xs">HTML</span>
+                </div>
+                <!-- JS -->
+                <div class="text-yellow-600 bg-yellow-100 card">
+                  <img
+                    src="./img/tech/sm-js.png"
+                    alt="Javascript"
+                    class="h-5 w-5"
+                  /><span class="text-xs">Javascript</span>
+                </div>
+                <!-- NodeJS -->
+                <div class="text-green-600 bg-green-100 card">
+                  <img
+                    src="./img/tech/sm-node.png"
+                    alt="NodeJS"
+                    class="h-5 w-5"
+                  /><span class="text-xs">NodeJS</span>
+                </div>
+                <!-- React -->
+                <div class="text-blue-400 bg-blue-100 card">
+                  <img
+                    src="./img/tech/sm-react.png"
+                    alt="React"
+                    class="h-5 w-5"
+                  /><span class="text-xs">React</span>
+                </div>
+                <!-- Tailwind -->
+                <div class="text-gray-600 bg-gray-100 card">
+                  <img
+                    src="./img/tech/sm-tailwindcss.png"
+                    alt="Tailwind CSS"
+                    class="h-5 w-5"
+                  /><span class="text-xs">Tailwind CSS</span>
+                </div>
+                <!-- VSCode -->
+                <div class="text-purple-600 bg-purple-100 card">
+                  <img
+                    src="./img/tech/sm-vscode.png"
+                    alt="VSCode"
+                    class="h-5 w-5"
+                  /><span class="text-xs">VSCode</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 7. Fun With Flags -->
+            <div
+              class="relative bg-white rounded overflow-hidden shadow-md hover:shadow-lg"
+            >
+              <img
+                src="./img/placeholder.png"
+                alt=""
+                srcset=""
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="text-2xl font-semibold">Fun With Flags</span
+                ><span class="text-lg block text-blue-400">05 Dec 2020</span>
+                <span class="block text-blue-700"
+                  >One morning, when George woke from troubled dreams, he found
+                  himself transformed in his bed into a horrible vermin. He lay
+                  on his armour-like back, and if he lifted his head a little he
+                  could see his brown belly, slightly domed and divided by
+                  arches into stiff sections.</span
+                >
+                <div class="flex flex-row flex-wrap justify-evenly">
+                  <a href="#" class=""
+                    ><button class="project-button hover:bg-green-400">
+                      <img
+                        src="./img/icons/eye.svg"
+                        alt=""
+                        srcset=""
+                        class="w-5 h-5 mr-2"
+                      />
+                      <span>View Project</span>
+                    </button></a
+                  >
+                  <a href="#" class=""
+                    ><button class="project-button hover:bg-purple-400">
+                      <img
+                        src="./img/icons/github.svg"
+                        alt=""
+                        srcset=""
+                        class="w-5 h-5 mr-2"
+                      />
+                      <span>Github</span>
+                    </button></a
+                  >
+                  <a href="#" class=""
+                    ><button class="project-button hover:bg-gray-500">
+                      <img
+                        src="./img/icons/replit.svg"
+                        alt=""
+                        srcset=""
+                        class="w-6 h-6 mr-2"
+                      />
+                      <span>Repl.it</span>
+                    </button></a
+                  >
+                  <a href="#" class=""
+                    ><button class="project-button hover:bg-red-400 transition">
+                      <img
+                        src="./img/icons/youtube.svg"
+                        alt=""
+                        srcset=""
+                        class="w-6 h-6 mr-2"
+                      />
+                      <span>Demo</span>
+                    </button></a
+                  >
+                </div>
+              </div>
+
+              <div class="absolute top-0 m-1 flex flex-row">
+                <!-- CSS -->
+                <div class="text-blue-600 bg-blue-100 card">
+                  <img
+                    src="./img/tech/sm-css3.png"
+                    alt="CSS"
+                    class="h-5 w-5"
+                  /><span class="text-xs">CSS</span>
+                </div>
+                <!-- GITHUB -->
+                <div class="text-gray-600 bg-gray-200 card">
+                  <img
+                    src="./img/tech/sm-github.png"
+                    alt="Github"
+                    class="h-5 w-5"
+                  /><span class="text-xs">Github</span>
+                </div>
+                <!-- HTML -->
+                <div class="text-red-400 bg-red-100 card">
+                  <img
+                    src="./img/tech/sm-html5.png"
+                    alt="HTML"
+                    class="h-5 w-5"
+                  /><span class="text-xs">HTML</span>
+                </div>
+                <!-- JS -->
+                <div class="text-yellow-600 bg-yellow-100 card">
+                  <img
+                    src="./img/tech/sm-js.png"
+                    alt="Javascript"
+                    class="h-5 w-5"
+                  /><span class="text-xs">Javascript</span>
+                </div>
+                <!-- NodeJS -->
+                <div class="text-green-600 bg-green-100 card">
+                  <img
+                    src="./img/tech/sm-node.png"
+                    alt="NodeJS"
+                    class="h-5 w-5"
+                  /><span class="text-xs">NodeJS</span>
+                </div>
+                <!-- React -->
+                <div class="text-blue-400 bg-blue-100 card">
+                  <img
+                    src="./img/tech/sm-react.png"
+                    alt="React"
+                    class="h-5 w-5"
+                  /><span class="text-xs">React</span>
+                </div>
+                <!-- Tailwind -->
+                <div class="text-gray-600 bg-gray-100 card">
+                  <img
+                    src="./img/tech/sm-tailwindcss.png"
+                    alt="Tailwind CSS"
+                    class="h-5 w-5"
+                  /><span class="text-xs">Tailwind CSS</span>
+                </div>
+                <!-- VSCode -->
+                <div class="text-purple-600 bg-purple-100 card">
+                  <img
+                    src="./img/tech/sm-vscode.png"
+                    alt="VSCode"
+                    class="h-5 w-5"
+                  /><span class="text-xs">VSCode</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div
-            class="px-4 py-1 col-span-1 hover:bg-blue-600 hover:text-yellow-200 transition duration-700 ease-in-out hover:font-bold flex-end text-right"
-          >
-            <div class="font-bold">Next &gt;&gt;&gt;</div>
-            <div class="">Article Title</div>
+          <div class="text-center mt-4">
+            <a href="./portfolio.html" class=""
+              ><button
+                class="bg-blue-600 text-white project-button hover:bg-gray-400 hover:text-blue-600"
+              >
+                <span>View All</span>
+              </button></a
+            >
           </div>
+        </div>
+
+        <!-- BLOG POSTS -->
+        <div class="bg-gray-100 md:col-span-2 mb-10">
+          <h1 class="border-t-4 border-blue-200 text-center">
+            Latest Blog Posts
+          </h1>
+
+          <!-- PROJECT CARDS -->
+          <div class="text-justify px-10 py-5">
+            <div class="grid lg:grid-cols-2 gap-5">
+              <!-- CARD 1.  -->
+              <div
+                class="relative bg-white rounded overflow-hidden shadow-md hover:shadow-lg"
+              >
+                <img
+                  src="./img/placeholder.png"
+                  alt=""
+                  srcset=""
+                  class="w-full h-32 sm:h-48 object-cover"
+                />
+                <div class="m-4">
+                  <a
+                    href="./blog/javascript-destructuring-made-easy.html"
+                    class=""
+                  >
+                    <span class="text-2xl font-semibold"
+                      >Javascript Destructuring Made Easy</span
+                    ></a
+                  ><span class="text-lg block text-blue-400">05 Dec 2020</span>
+                  <span class="block text-blue-700"
+                    >One morning, when George woke from troubled dreams, he
+                    found himself transformed in his bed into a horrible vermin.
+                    He lay on his armour-like back, and if he lifted his head a
+                    little he could see his brown belly, slightly domed and
+                    divided by arches into stiff sections.</span
+                  >
+                  <div class="flex flex-row flex-wrap justify-evenly">
+                    <a
+                      href="./blog/javascript-destructuring-made-easy.html"
+                      class=""
+                      ><button class="project-button hover:bg-blue-600">
+                        <img
+                          src="./img/icons/eye.svg"
+                          alt=""
+                          srcset=""
+                          class="w-5 h-5 mr-2"
+                        />
+                        <span>View Article</span>
+                      </button></a
+                    >
+                  </div>
+                </div>
+
+                <div class="absolute top-0 m-1 flex flex-row">
+                  <!-- JS -->
+                  <div class="text-yellow-600 bg-yellow-100 card">
+                    <img
+                      src="./img/tech/sm-js.png"
+                      alt="Javascript"
+                      class="h-5 w-5"
+                    /><span class="text-xs">Javascript</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 2.  -->
+              <div
+                class="relative bg-white rounded overflow-hidden shadow-md hover:shadow-lg"
+              >
+                <img
+                  src="./img/placeholder.png"
+                  alt=""
+                  srcset=""
+                  class="w-full h-32 sm:h-48 object-cover"
+                />
+                <div class="m-4">
+                  <a href="./blog/video-demo-quiz-app.html" class="">
+                    <span class="text-2xl font-semibold"
+                      >Video: Demo of CLI Quiz App</span
+                    ></a
+                  ><span class="text-lg block text-blue-400">05 Dec 2020</span>
+                  <span class="block text-blue-700"
+                    >One morning, when George woke from troubled dreams, he
+                    found himself transformed in his bed into a horrible vermin.
+                    He lay on his armour-like back, and if he lifted his head a
+                    little he could see his brown belly, slightly domed and
+                    divided by arches into stiff sections.</span
+                  >
+                  <div class="flex flex-row flex-wrap justify-evenly">
+                    <a href="./blog/video-demo-quiz-app.html" class=""
+                      ><button class="project-button hover:bg-blue-600">
+                        <img
+                          src="./img/icons/eye.svg"
+                          alt=""
+                          srcset=""
+                          class="w-5 h-5 mr-2"
+                        />
+                        <span>View Article</span>
+                      </button></a
+                    >
+                  </div>
+                </div>
+
+                <div class="absolute top-0 m-1 flex flex-row">
+                  <!-- JS -->
+                  <div class="text-yellow-600 bg-yellow-100 card">
+                    <img
+                      src="./img/tech/sm-js.png"
+                      alt="Javascript"
+                      class="h-5 w-5"
+                    /><span class="text-xs">Javascript</span>
+                  </div>
+                  <!-- NodeJS -->
+                  <div class="text-green-600 bg-green-100 card">
+                    <img
+                      src="./img/tech/sm-node.png"
+                      alt="NodeJS"
+                      class="h-5 w-5"
+                    /><span class="text-xs">NodeJS</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 3. -->
+              <div
+                class="relative bg-white rounded overflow-hidden shadow-md hover:shadow-lg"
+              >
+                <img
+                  src="./img/placeholder.png"
+                  alt=""
+                  srcset=""
+                  class="w-full h-32 sm:h-48 object-cover"
+                />
+                <div class="m-4">
+                  <a href="./blog/getting-started-with-tailwind.html" class="">
+                    <span class="text-2xl font-semibold"
+                      >Getting Started With Tailwind</span
+                    ></a
+                  ><span class="text-lg block text-blue-400">05 Dec 2020</span>
+                  <span class="block text-blue-700"
+                    >One morning, when George woke from troubled dreams, he
+                    found himself transformed in his bed into a horrible vermin.
+                    He lay on his armour-like back, and if he lifted his head a
+                    little he could see his brown belly, slightly domed and
+                    divided by arches into stiff sections.</span
+                  >
+                  <div class="flex flex-row flex-wrap justify-evenly">
+                    <a href="./blog/getting-started-with-tailwind.html" class=""
+                      ><button class="project-button hover:bg-blue-600">
+                        <img
+                          src="./img/icons/eye.svg"
+                          alt=""
+                          srcset=""
+                          class="w-5 h-5 mr-2"
+                        />
+                        <span>View Article</span>
+                      </button></a
+                    >
+                  </div>
+                </div>
+
+                <div class="absolute top-0 m-1 flex flex-row">
+                  <!-- Tailwind -->
+                  <div class="text-gray-600 bg-gray-100 card">
+                    <img
+                      src="./img/tech/sm-tailwindcss.png"
+                      alt="Tailwind CSS"
+                      class="h-5 w-5"
+                    /><span class="text-xs">Tailwind CSS</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 4.  -->
+              <div
+                class="relative bg-white rounded overflow-hidden shadow-md hover:shadow-lg"
+              >
+                <img
+                  src="./img/placeholder.png"
+                  alt=""
+                  srcset=""
+                  class="w-full h-32 sm:h-48 object-cover"
+                />
+                <div class="m-4">
+                  <a href="./blog/video-fun-with-flags.html" class="">
+                    <span class="text-2xl font-semibold"
+                      >Video: Demo of Fun With Flags</span
+                    ></a
+                  ><span class="text-lg block text-blue-400">05 Dec 2020</span>
+                  <span class="block text-blue-700"
+                    >One morning, when George woke from troubled dreams, he
+                    found himself transformed in his bed into a horrible vermin.
+                    He lay on his armour-like back, and if he lifted his head a
+                    little he could see his brown belly, slightly domed and
+                    divided by arches into stiff sections.</span
+                  >
+                  <div class="flex flex-row flex-wrap justify-evenly">
+                    <a href="./blog/video-fun-with-flags.html" class=""
+                      ><button class="project-button hover:bg-blue-600">
+                        <img
+                          src="./img/icons/eye.svg"
+                          alt=""
+                          srcset=""
+                          class="w-5 h-5 mr-2"
+                        />
+                        <span>View Article</span>
+                      </button></a
+                    >
+                  </div>
+                </div>
+
+                <div class="absolute top-0 m-1 flex flex-row">
+                  <!-- React -->
+                  <div class="text-blue-400 bg-blue-100 card">
+                    <img
+                      src="./img/tech/sm-react.png"
+                      alt="React"
+                      class="h-5 w-5"
+                    /><span class="text-xs">React</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="./blog.html" class=""
+              ><button
+                class="bg-blue-600 text-white project-button hover:bg-gray-400 hover:text-blue-600"
+              >
+                <span>View All</span>
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="flex flex-row content-evenly justify-center">
+            <a href="https://www.linkedin.com/in/aamyear/" class="">
+              <img
+                class="w-16 h-16 m-1"
+                src="./img/icons/icon-linkedin.svg"
+                alt=""
+                srcset=""
+            /></a>
+            <a href="#" class="">
+              <img
+                class="w-16 h-16 mx-2"
+                src="./img/icons/icon-youtube.svg"
+                alt=""
+                srcset=""
+              />
+            </a>
+            <a href="https://github.com/aamyear/" class="">
+              <img
+                class="w-16 h-16 mx-2"
+                src="./img/icons/icon-github.svg"
+                alt=""
+                srcset=""
+            /></a>
+            <a href="https://twitter.com/aamyear" class="">
+              <img
+                class="w-16 h-16 mx-2"
+                src="./img/icons/icon-twitter.svg"
+                alt=""
+                srcset=""
+            /></a>
+            <a href="#" class="">
+              <img
+                class="w-16 h-16 mx-2"
+                src="./img/icons/icon-medium.svg"
+                alt=""
+                srcset=""
+            /></a>
+          </div>
+          <h3 class="">Connect</h3>
         </div>
       </div>
 
