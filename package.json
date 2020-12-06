@@ -1,0 +1,24 @@
+{
+  "name": "markFive",
+  "version": "1.0.0",
+  "description": "_Built with [Tailwind](https://tailwindcss.com/). Using it for the first time in this project. Refer to [personal reference notes here]()._",
+  "main": "index.js",
+  "dependencies": {
+    "tailwindcss": "^1.4.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aamyear/NeoG-markFive.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aamyear/NeoG-markFive/issues"
+  },
+  "homepage": "https://github.com/aamyear/NeoG-markFive#readme"
+}
