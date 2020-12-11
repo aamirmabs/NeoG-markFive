@@ -103,4 +103,12 @@ a:hover {
   @apply text-white shadow-xl;
 }
 
+.social {
+  @apply p-5;
+}
+
+.social-dark {
+  @apply bg-blue-400;
+}
+
 @tailwind utilities;
