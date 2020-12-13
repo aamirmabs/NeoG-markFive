@@ -725,15 +725,15 @@ a:hover {
 }
 
 #slide-1 {
-  background-image: url("./img/placeholder.png");
+  background-image: url("./img/blog/neog-markNine.jpg");
 }
 
 #slide-2 {
-  background-image: url("./img/placeholder.png");
+  background-image: url("./img/blog/neog-markNineA.jpg");
 }
 
 #slide-3 {
-  background-image: url("./img/placeholder.png");
+  background-image: url("./img/blog/neog-markNineB.jpg");
 }
 
 .card {
@@ -766,7 +766,7 @@ a:hover {
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
   transition-duration: 700ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /* @apply bg-transparent  text-blue-700 font-semibold py-2 px-4 border border-blue-500 rounded hover:border-transparent hover:bg-blue-500 ; */
+  /* @apply bg-transparent  text-blue-700 font-semibold py-2 px-4 border border-blue-500 rounded  ; */
 }
 
 .project-button:hover {
@@ -774,6 +774,10 @@ a:hover {
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --bg-opacity: 1;
+  background-color: #4299e1;
+  background-color: rgba(66, 153, 225, var(--bg-opacity));
+  border-color: transparent;
 }
 
 .social {
